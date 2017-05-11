@@ -26,7 +26,7 @@ img{
 .navbar-inverse .navbar-toggle .icon-bar{
 	background-color: maroon;
 }
-.col-md-3>p{
+.col-md-4>p{
 	font-family: Economica;
 }
 .fa:hover{
@@ -56,7 +56,59 @@ i{
 }
 .thumbnail{
 	box-shadow: 0px 0px 10px;
+	width: 300px;
 }
+#r1{
+	padding-left: 60px;
+}
+#r2{
+	padding-left: 10px;
+}
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: #e1e1e1 solid 6px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+}
+#3{
+	padding-left: -15px;
+}
+
 
 
 	
